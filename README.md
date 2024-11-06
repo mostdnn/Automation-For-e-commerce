@@ -23,7 +23,7 @@ Steps to Set Up the Project
 Clone the Repository:
 
 bash
-نسخ الكود
+
 git clone <repository_url>
 cd <project_directory>
 Import the Project into IntelliJ IDEA:
@@ -34,7 +34,7 @@ IntelliJ will automatically import the project if Maven is used.
 Install Dependencies: The project uses Maven to manage dependencies. Simply build the project using:
 
 bash
-نسخ الكود
+
 mvn clean install
 This will download the necessary libraries like Selenium, TestNG, and Allure.
 
@@ -44,7 +44,7 @@ You can set up configuration files for different environments in the src/main/re
 The configuration can include environment-specific details like the base URL, browser options, and more.
 Project Structure
 bash
-نسخ الكود
+
 ├── pom.xml                # Maven project file with dependencies
 ├── src
 │   ├── main
@@ -72,7 +72,7 @@ Each test method is annotated with @Test, and TestNG's annotations like @BeforeM
 Example:
 
 java
-نسخ الكود
+
 @Test
 public void loginTest() {
     LoginPage loginPage = new LoginPage(driver);
@@ -111,7 +111,7 @@ Steps to generate Allure report:
 
 After running the tests, generate the Allure report with:
 bash
-نسخ الكود
+
 allure serve target/allure-results
 Allure will open the report in the default browser.
 5. IntelliJ IDEA
@@ -126,7 +126,7 @@ Right-click on the Test class or TestNG.xml file and select Run.
 Run from Command Line:
 
 bash
-نسخ الكود
+
 mvn test
 This will run the tests using Maven and generate reports in the target directory.
 
@@ -135,13 +135,13 @@ Allure Reports: After running tests, Allure generates a report that can be opene
 To generate the Allure report, use:
 
 bash
-نسخ الكود
+
 allure serve target/allure-results
 Dependencies in pom.xml
 Here are some of the dependencies included in the pom.xml:
 
 xml
-نسخ الكود
+
 <dependencies>
     <!-- Selenium WebDriver -->
     <dependency>
