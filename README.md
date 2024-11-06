@@ -37,3 +37,21 @@ Before you begin, ensure that you have the following installed:
 │       └── config.properties  # Configuration file
 ├── target                # Allure and test output
 └── README.md             # Project documentation
+
+
+
+How to Run Tests
+Run from IntelliJ:
+Right-click on the Test class or TestNG.xml file and select Run.
+Run from Command Line:
+bash
+
+mvn test
+Allure Reports
+After running the tests, generate the Allure report by using the following command:
+
+bash
+
+allure serve target/allure-results
+Conclusion
+This framework provides a reliable and maintainable approach to web automation testing using Selenium, TestNG, and Allure Reporting. It follows the Page Object Model (POM) design pattern for better separation of concerns.
